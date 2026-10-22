@@ -10,7 +10,7 @@ import {
   
   function createBox(scene: Scene) {
     let box = MeshBuilder.CreateBox("box",{size: 1}, scene);
-    box.position.y = 1;
+    box.position.y = 3;
     return box;
   }
 
@@ -27,7 +27,7 @@ import {
       { diameter: 2, segments: 32 },
       scene,
     );
-    sphere.position.y = 3;
+    sphere.position.y = 1;
     return sphere;
   }
   
