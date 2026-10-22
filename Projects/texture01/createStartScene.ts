@@ -14,6 +14,7 @@ import {
   RectAreaLight,
   StandardMaterial,
   ShadowGenerator,
+  Texture,
   TransformNode
 } from "@babylonjs/core";
 
@@ -21,7 +22,10 @@ function createBox(scene: Scene) {
   let box = MeshBuilder.CreateBox("box", { size: 1 }, scene);
   box.position.y = 0.0;
   box.position.y = 0.501
-  box.position.x = 0.5
+  const myMaterial = new StandardMaterial("myMaterial", scene);
+  const texture = new Texture("./assets/crate.png", scene);
+  myMaterial.diffuseTexture = texture;
+  box.material = myMaterial;
   return box;
 }
 
@@ -138,6 +142,7 @@ function createSphere(scene: Scene) {
   sphereMat.roughness = 0.2;
   sphereMat.albedoColor = Color3.White();
 
+  
   sphere.material = sphereMat;
   return sphere;
 }
