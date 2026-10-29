@@ -1,4 +1,4 @@
-import { SceneData } from "./interfaces";
+import type { SceneData } from "./interfaces";
 
 import {
   Scene,
@@ -16,8 +16,8 @@ import {
   Engine,
 } from "@babylonjs/core";
 
-function createBox(scene) {
-  let box = MeshBuilder.CreateBox("box", scene);
+function createBox(scene:Scene) {
+  let box = MeshBuilder.CreateBox("box", {size: 1}, scene);
   box.position.y = 3;
   box.position.y = 0.51;
   return box;
@@ -93,6 +93,16 @@ function createSphere(scene: Scene) {
   sphere.position.y = 1.5;
   return sphere;
 }
+function createCylinder(scene: Scene) {
+  let cylinder = MeshBuilder.CreateCylinder(
+    "cylinder",
+    { diameter: 1, height: 2, tessellation: 32 },
+    scene
+  );
+  cylinder.position.y = 3.5;
+  cylinder.position.x = -2.5;
+  return cylinder;
+}
 
 function createGround(scene: Scene) {
   let ground = MeshBuilder.CreateGround(
@@ -132,6 +142,7 @@ export default function createStartScene(engine: Engine) {
   let lightSpot = createSpotLight(scene);
   let lightHemispheric = createHemisphericLight(scene);
   let sphere = createSphere(scene);
+  let cylinder = createCylinder(scene);
   let ground = createGround(scene);
   let camera = createArcRotateCamera(scene);
   let shadowGenerator = createShadows(lightDirectional, sphere, box);
@@ -144,6 +155,7 @@ export default function createStartScene(engine: Engine) {
     lightSpot,
     lightHemispheric,
     sphere,
+    cylinder,
     ground,
     camera,
     shadowGenerator,

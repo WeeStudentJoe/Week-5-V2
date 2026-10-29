@@ -17,6 +17,7 @@ export interface SceneData {
   lightSpot: SpotLight;
   lightHemispheric: HemisphericLight;
   sphere: Mesh;
+  cylinder: Mesh;
   ground: Mesh;
   camera: Camera;
   shadowGenerator: ShadowGenerator;
