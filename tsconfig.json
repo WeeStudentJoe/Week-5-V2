@@ -1,5 +1,4 @@
 {
-
   "compilerOptions": {
     // Environment setup & latest features
     "lib": ["ESNext", "DOM"],
@@ -29,7 +28,8 @@
     "noPropertyAccessFromIndexSignature": false
   },
   "include": [
-  "**/*.ts",
-  "declarations.d.ts" 
+  "*/*.ts",
+  "Projects/**/*.ts",
+  "declaration.d.ts" 
   ]
 }
