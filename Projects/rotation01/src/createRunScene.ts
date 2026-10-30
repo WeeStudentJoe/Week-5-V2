@@ -1,5 +1,6 @@
 import { Vector3, Quaternion } from "@babylonjs/core";
 
+
 import type { SceneData } from "./interfaces";
 
 // rotate box
@@ -31,7 +32,7 @@ export default function createRunScene(runScene: SceneData) {
       cylinderaxis,
       cylinderAngle * 2 * Math.PI
     );
-    // rotate box
+    
     const axis: Vector3 = new Vector3(0, 0, 1).normalize();
     const quat: Quaternion = Quaternion.RotationAxis(
       axis,
@@ -39,9 +40,7 @@ export default function createRunScene(runScene: SceneData) {
     );
 
   
-    
-
-  
+  //shape rotation
     runScene.box.rotationQuaternion = quat;
     boxAngle += boxSpeed;
     boxAngle %= 1;
@@ -49,6 +48,8 @@ export default function createRunScene(runScene: SceneData) {
     runScene.cylinder.rotationQuaternion = cylquat;
     cylinderAngle += cylinderSpeed;
     cylinderAngle %= 1;
+
+
 
     // move light in ellipse  and cycle luma
     runScene.lightSpot.position = new Vector3(

@@ -5,10 +5,10 @@
     "": {
       "name": "testcard",
       "dependencies": {
-        "@babylonjs/core": "^9.32.0",
+        "@babylonjs/core": "^9.33.0",
         "@babylonjs/havok": "^1.3.14",
-        "@babylonjs/inspector": "^9.32.0",
-        "@babylonjs/loaders": "^9.32.0",
+        "@babylonjs/inspector": "^9.33.0",
+        "@babylonjs/loaders": "^9.33.0",
       },
       "devDependencies": {
         "@types/bun": "^1.4.3",
@@ -21,7 +21,7 @@
 
     "@babylonjs/addons": ["@babylonjs/addons@9.32.0", "", { "peerDependencies": { "@babylonjs/core": "^9.0.0" } }, "sha512-RWdXqKDoArhXuWOudAFdFbCe5pUXNtbysMvK+gcvzsjvE5fc0CpunLXte8BMYVQwRaMfZvqV1YKkEshkrWikCw=="],
 
-    "@babylonjs/core": ["@babylonjs/core@9.32.0", "", {}, "sha512-mHBsyKJuQHbs97Rb/1qxMRg6Ru79+0BjLhGLTa34s6U/fkBCtOh+xKTQDqFpFtPqgBw9TLFcIEvFHy01vnJxwA=="],
+    "@babylonjs/core": ["@babylonjs/core@9.33.0", "", {}, "sha512-JMbMUoPy1AUQsqTKSjFOJV+gtshgfZdHDn3ZIFzOWwxQpKrHUQCgFDYKXRU4CwD/tAfT9zubiRJtUKCh5wpo7Q=="],
 
     "@babylonjs/gui": ["@babylonjs/gui@9.32.0", "", { "peerDependencies": { "@babylonjs/core": "^9.0.0" } }, "sha512-VstJSVYIWp2DkyuoK72JIDUjfkurP6u9O+YHuE3yYHbRVbNdH8CQo9h6Rb9IU2zoFbnjvOA5Y9tIuHrvdexW+Q=="],
 
@@ -29,9 +29,9 @@
 
     "@babylonjs/havok": ["@babylonjs/havok@1.3.14", "", { "dependencies": { "@types/emscripten": "^1.39.6" } }, "sha512-+j2FDwLtkh5Gb//KizE8Ks3GIB/3vH8Yx9cQsMvZQpsKkH5gn089wIlJ9Yt8dJxbwBmWKGpMTIXxZE7YdOHUnQ=="],
 
-    "@babylonjs/inspector": ["@babylonjs/inspector@9.32.0", "", { "peerDependencies": { "@babylonjs/addons": "^9.0.0", "@babylonjs/core": "^9.0.0", "@babylonjs/gui": "^9.0.0", "@babylonjs/gui-editor": "^9.0.0", "@babylonjs/lite": "^1.32.0", "@babylonjs/loaders": "^9.0.0", "@babylonjs/materials": "^9.0.0", "@babylonjs/node-editor": "^9.0.0", "@babylonjs/node-geometry-editor": "^9.0.0", "@babylonjs/node-particle-editor": "^9.0.0", "@babylonjs/node-render-graph-editor": "^9.0.0", "@babylonjs/serializers": "^9.0.0", "@fluentui-contrib/react-resize-handle": "^0.8.4", "@fluentui-contrib/react-virtualizer": "^1.0.0", "@fluentui/react-charts": "^9.3.27", "@fluentui/react-components": "^9.70.0", "@fluentui/react-icons": "^2.0.310", "@fluentui/react-motion-components-preview": "^0.15.2", "@fluentui/react-utilities": "^9.26.2", "react": ">=16.14.0 <20.0.0", "react-dom": ">=16.14.0 <20.0.0", "usehooks-ts": "^3.1.1" }, "optionalPeers": ["@babylonjs/lite"], "bin": { "babylon-inspector": "bin/inspector-cli.mjs" } }, "sha512-s7RAn5W35CEdOUqv2oHck5tUwYDe/zKGL8S8MaOpb8hF3JKpB2fgVDrXXEUnqrV5/pElRW3paWgUQrKh0sPchQ=="],
+    "@babylonjs/inspector": ["@babylonjs/inspector@9.33.0", "", { "peerDependencies": { "@babylonjs/addons": "^9.0.0", "@babylonjs/core": "^9.0.0", "@babylonjs/gui": "^9.0.0", "@babylonjs/gui-editor": "^9.0.0", "@babylonjs/lite": "^1.37.1", "@babylonjs/loaders": "^9.0.0", "@babylonjs/materials": "^9.0.0", "@babylonjs/node-editor": "^9.0.0", "@babylonjs/node-geometry-editor": "^9.0.0", "@babylonjs/node-particle-editor": "^9.0.0", "@babylonjs/node-render-graph-editor": "^9.0.0", "@babylonjs/serializers": "^9.0.0", "@fluentui-contrib/react-resize-handle": "^0.8.4", "@fluentui-contrib/react-virtualizer": "^1.0.0", "@fluentui/react-charts": "^9.3.27", "@fluentui/react-components": "^9.70.0", "@fluentui/react-icons": "^2.0.310", "@fluentui/react-motion-components-preview": "^0.15.2", "@fluentui/react-utilities": "^9.26.2", "react": ">=16.14.0 <20.0.0", "react-dom": ">=16.14.0 <20.0.0", "usehooks-ts": "^3.1.1" }, "optionalPeers": ["@babylonjs/lite"], "bin": { "babylon-inspector": "bin/inspector-cli.mjs" } }, "sha512-NexQPQsAaeX3QDevyDiXW9JQmuOuUgmahLRa5dqHFPOAYd8HGRdSCoUcb9DP+V05xMNIgrCBBO2z3KieGGRG7w=="],
 
-    "@babylonjs/loaders": ["@babylonjs/loaders@9.32.0", "", { "peerDependencies": { "@babylonjs/core": "^9.0.0", "babylonjs-gltf2interface": "^9.0.0" } }, "sha512-pHWbOaR34riRNxX0rffPpVcbaAoEXmjtS00A4RO43zoz4EPVg4mESX0EqzaA8yl7FbVk+aYWwyj30uR1OWrl1Q=="],
+    "@babylonjs/loaders": ["@babylonjs/loaders@9.33.0", "", { "peerDependencies": { "@babylonjs/core": "^9.0.0", "babylonjs-gltf2interface": "^9.0.0" } }, "sha512-uS9fY2yB8i1KdOIuQBd4O3XRji9K3MicSGlJIyBcSlW1kEetl9GO8B6ttbJK0ocH1PPvOfMRHOqMDGK4zRUDZw=="],
 
     "@babylonjs/materials": ["@babylonjs/materials@9.32.0", "", { "peerDependencies": { "@babylonjs/core": "^9.0.0" } }, "sha512-IfYJLsHFlFSzJEvDJ3bQ4bVPiQw9LImUTTTt95IGo0yBzELgAaaziE8kv1wKkZoX6Fi7Q9k0GUYdlDyS5rlB5A=="],
 
