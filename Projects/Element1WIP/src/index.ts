@@ -7,6 +7,16 @@ const CanvasName = "renderCanvas";
 
 let canvas = document.createElement("canvas");
 canvas.id = CanvasName;
+canvas.width = 800;   // Set internal resolution
+canvas.height = 400;
+
+canvas.classList.add("background-canvas");
+document.body.style.display = "flex";
+document.body.style.justifyContent = "center"; // Horizontal centering
+document.body.style.alignItems = "center";     // Vertical centering
+document.body.style.minHeight = "100vh";       // Use full viewport height
+document.body.style.margin = "0"; 
+document.body.appendChild(canvas);
 
 canvas.classList.add("background-canvas");
 document.body.appendChild(canvas);
