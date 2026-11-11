@@ -2,6 +2,8 @@ import { file } from "bun";
 
 const PORT = 3000;
 
+
+
 // MIME type mapping
 const mimeTypes: Record<string, string> = {
   ".ts": "application/javascript",
@@ -13,6 +15,7 @@ const mimeTypes: Record<string, string> = {
   ".jpg": "image/jpeg",
   ".gif": "image/gif",
   ".svg": "image/svg+xml",
+  ".wasm": "application/wasm",
 };
 
 Bun.serve({
