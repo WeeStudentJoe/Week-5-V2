@@ -21,6 +21,9 @@ import {
 } from "@babylonjs/core";
 
 
+
+
+
 function createLight(scene: Scene) {
   const light = new HemisphericLight("light", new Vector3(0, 1, 0), scene);
   light.intensity = 0.7;
@@ -113,7 +116,7 @@ function addAssets(scene: Scene) {
   const tree1 = assetsManager.addMeshTask(
     "tree1 task",
     "",
-    "./assets/nature/gltf/",
+    "./assets/nature/gLTF/",
     "CommonTree_1.gltf"
   );
   tree1.onSuccess = function (task) {
@@ -136,7 +139,7 @@ function addAssets(scene: Scene) {
   const tree2 = assetsManager.addMeshTask(
     "tree2 task",
     "",
-    "./assets/nature/gltf/",
+    "./assets/nature/gLTF/",
     "CommonTree_2.gltf"
   );
   tree2.onSuccess = function (task) {
@@ -156,7 +159,7 @@ function addAssets(scene: Scene) {
   const tree3 = assetsManager.addMeshTask(
     "tree3 task",
     "",
-    "./assets/nature/gltf/",
+    "./assets/nature/gLTF/",
     "CommonTree_3.gltf"
   );
   tree3.onSuccess = function (task) {
